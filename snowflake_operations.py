@@ -7,7 +7,7 @@ def snowflake_connection(connection_path:str):
     """
     Establishes and returns a connection to a Snowflake instance.
 
-    Parameters:
+    Parameters: nm
     - connection_path (str): Path to a JSON file containing connection details 
                              like User, Password, Account, Warehouse, Database, and Schema.
 
@@ -94,4 +94,3 @@ def write_to_db(snowflake_conn:snowflake.connector.connection,table:str,df:pd.Da
             print("Write Completed")
         else:
             print(str(e)+"Check inputs and code")
-
